@@ -26,7 +26,7 @@
 
 This project provides a detailed guide and necessary scripts to integrate MISP (Malware Information Sharing Platform) with Wazuh, a security monitoring solution. By combining these tools, security teams can automatically check Sysmon events against MISP's threat intelligence database, enabling real-time detection of known threats and indicators of compromise (IoCs).
 
-![Activate Feeds](Images/image0.png)
+![workflow](Images/image0.png)
 
 ## Prerequisites
 
