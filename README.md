@@ -434,26 +434,13 @@ In the integration test, you can use any attribute from the feed. However, we'll
 <details>
 <summary>Click to expand source references</summary>
 
-### Official Documentation
 - [MISP Project Documentation](https://www.misp-project.org/documentation/)
 - [Wazuh Documentation](https://documentation.wazuh.com/)
 - [Microsoft Sysmon Documentation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
-
-### GitHub Repositories
-- [MISP Docker Repository](https://github.com/MISP/misp-docker)
-- [MISP Core Repository](https://github.com/MISP/MISP)
-- [SwiftOnSecurity Sysmon Configuration](https://github.com/SwiftOnSecurity/sysmon-config)
-- [MISP-Wazuh Integration Script](https://github.com/karelumair/MISP-Wazuh-Integration)
-
-### Tutorials and Guides
-- [Wazuh Quick Start Guide](https://documentation.wazuh.com/current/quickstart.html)
-- [Docker Official Installation Guide](https://docs.docker.com/engine/install/ubuntu/)
-- [MISP Feed Configuration Guide](https://www.misp-project.org/feeds/)
-
-### Research Papers and Articles
-- Smith, J. (2023). "Integrating Threat Intelligence with Security Monitoring Tools." *Journal of Cybersecurity Research*, 15(2), 112-128.
-- Garcia, M. (2022). "MISP and Wazuh: An Integrated Approach to Threat Detection." *International Conference on Cybersecurity*.
-- Brown, L. (2024). "Automated Threat Intelligence Processing in Modern SOCs." *Security Operations Quarterly*, 7(1), 45-60.
+- [ MISP integration issues](https://www.reddit.com/r/Wazuh/comments/10hdd22/misp_integration_issues/)
+- [wazuh sysmon logs forwarding issues](https://groups.google.com/g/wazuh/c/2FXD6wx0TDU)
+- [youtube video](https://www.youtube.com/watch?v=-qRMDxZpnWg&t=1004s&ab_channel=TaylorWalton)
+- [Additional guide](https://kravensecurity.com/threat-intelligence-with-misp-part-2-setting-up-misp/)
 
 </details>
 
