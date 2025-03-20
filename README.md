@@ -61,3 +61,4 @@ cp template.env .env
 vim .env
 ```
 Modify the `MISP_BASEURL` variable in `.env` to reflect the machine's IP address.
+![Alt text](images/image1.png)
