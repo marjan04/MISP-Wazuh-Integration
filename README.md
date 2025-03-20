@@ -463,8 +463,4 @@ graph TD
     C -->|Display Alerts| F[Wazuh Dashboard]
 ```
 
-## 📊 Project Status
-![GitHub issues](https://img.shields.io/github/issues-raw/karelumair/MISP-Wazuh-Integration?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/karelumair/MISP-Wazuh-Integration?style=for-the-badge)
-
 </div>
