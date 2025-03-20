@@ -281,7 +281,7 @@ systemctl restart wazuh-manager
 systemctl restart wazuh-indexer
 systemctl restart wazuh-dashboard
 ```
-## integration testing
+## Integration testing
 In the integration test, you can use any attribute from the feed. However, we’ll create our own event and add a domain attribute to it, allowing us to test with that domain later.
 ### create our own event
 - Access the MISP interface via its URL (e.g.: http://<MISP_IP_address>).
