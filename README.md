@@ -11,7 +11,7 @@ Before starting the integration, ensure you have the following:
 - Basic knowledge of Linux command line, Docker, and network configuration
 - Python 3 and `pip3` installed (for the integration script)
 
-## Installation
+## Installation and Configuration
 
 ### Installing MISP
 - MISP can be installed using three methods: automatic script, manual installation, or Docker. Choose the method that best suits your needs.
@@ -97,9 +97,31 @@ A MISP feed is a structured data source that automatically provides up-to-date i
 <br>
 ![Alt text](Images/image4.png)
 <br>
-
-
-
+Past this [script](https://github.com/MISP/MISP/blob/2.4/app/files/feed-metadata/defaults.json) here : 
+<br>
+<br>
+![Alt text](Images/image5.png)
+<br>
+DON'T FORGET TO ACTIVATE AND COLLECT THE FEEDS
+<br>
+<br>
+![Alt text](Images/image6.png)
+<br>
+#### Set up a Cronjob to update feeds daily
+```
+0 1 * * * /usr/bin/curl -XPOST --insecure --header "Authorization: **YOUR_API_KEY**" --header "Accept: application/json" - header "Content-Type: application/json" https://**YOUR_MISP_ADDRESS**/feeds/fetchFromAllFeeds
+```
+### Installing Wazuh
+- Wazuh offers an installation method called `Quick Start`
+- Download and run the Wazuh installation assistant :
+```
+curl -sO https://packages.wazuh.com/4.11/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+```
+- Once the installation is complete, the wizard will give us a username and password to connect to the indexer
+<br>
+<br>
+![Alt text](Images/image7.png)
+<br>
 
 
 
