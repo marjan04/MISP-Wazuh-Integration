@@ -22,7 +22,7 @@ Before starting the integration, ensure you have the following:
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 ##### Add Docker's official GPG key
-```
+```bash
 sudo apt-get update
 
 sudo apt-get install ca-certificates curl gnupg
@@ -118,10 +118,16 @@ DON'T FORGET TO ACTIVATE AND COLLECT THE FEEDS
 curl -sO https://packages.wazuh.com/4.11/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 ```
 - Once the installation is complete, the wizard will give us a username and password to connect to the indexer
-<br>
-<br>
+
 ![Alt text](Images/image7.png)
-<br>
+### Initial Wazuh Configuration
+- we identify ourselves using the credentials given previously
+
+![Alt text](Images/image8.png)
+- Home page :
+
+![Alt text](Images/image9.png)
+
 
 
 
