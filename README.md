@@ -34,7 +34,7 @@ Before starting the integration, ensure you have the following:
 
 - A machine with Ubuntu Server installed (for MISP and Wazuh installation)
 - VMware or another virtualization platform (if using a VM)
-- Docker installed (if using the Docker installation method)
+- Docker installed (We’ll show how to install it if it’s not already installed)
 - Basic knowledge of Linux command line, Docker, and network configuration
 - Python 3 and `pip3` installed (for the integration script)
 
