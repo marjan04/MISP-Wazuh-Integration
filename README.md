@@ -129,7 +129,7 @@ This file holds the configuration settings for the Docker environment running MI
 
 ##### Launch MISP containers
 ```bash
-sudo docker compose up -d
+sudo docker compose up
 ```
 
 ##### To stop the Docker environment
