@@ -355,6 +355,8 @@ sudo chown root:wazuh custom-misp && sudo chmod 750 custom-misp
   <alert_format>json</alert_format>
 </integration>
 ```
+![integration block](Images/image26.png)
+
 
 > **Note:** The manager will only run the script when one of the Sysmon groups is triggered
 
@@ -369,7 +371,7 @@ systemctl restart wazuh-manager
 <details>
 <summary>Click to expand rule addition steps</summary>
 
-- Go to `Server Management` > `Rules` > `Add New Rule`. Name it `misp.xml`, add the following and save.
+- Go to `Server Management` > `Rules` > `Add New Rule file`. Name it `misp.xml`, add the following and save.
 ```xml
 <group name="misp,">
   <rule id="100620" level="10">
@@ -407,7 +409,7 @@ systemctl restart wazuh-dashboard
 
 ## Integration Testing
 
-In the integration test, you can use any attribute from the feed. However, we'll create our own event and add a domain attribute to it, allowing us to test with that domain later.
+In the integration test, you can use any attribute from the feeds. However, we'll create our own event and add a domain attribute to it, allowing us to test with that domain later.
 
 ### Create our own event
 
