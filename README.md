@@ -191,11 +191,11 @@ Paste this [script](https://github.com/MISP/MISP/blob/2.4/app/files/feed-metadat
 ### Installing Wazuh
 
 - Wazuh offers an installation method called `Quick Start`
-- Download and run the Wazuh installation assistant:
+- Download and run the Wazuh installation assistant
 ```bash
 curl -sO https://packages.wazuh.com/4.11/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 ```
-- Once the installation is complete, the wizard will give us a username and password to connect to the indexer
+- Once the installation is complete, the assistant will give us a username and password to connect to the indexer
 
 ![Wazuh Installation Complete](Images/image7.png)
 
@@ -213,7 +213,7 @@ curl -sO https://packages.wazuh.com/4.11/wazuh-install.sh && sudo bash ./wazuh-i
 <details>
 <summary>Click to expand agent deployment steps</summary>
 
-- Click on Deploy new agent
+- Click on `Deploy new agent`
 - Select your agent's system
 
 ![Agent Selection](Images/image10.png)
@@ -314,18 +314,19 @@ systemctl restart wazuh-manager
 
 > **Note:** Ensure that you didn't add extension `.py`
 
-- Change the URL and API key in the script.
+- Change the `URL` and the `API key` in the script.
 
 ![MISP Integration Script Configuration](Images/image16.png)
 
 - Make sure to set the permissions:
 ```bash
+cd /var/ossec/integrations/
 sudo chown root:wazuh custom-misp && sudo chmod 750 custom-misp
 ```
 
 - Make sure wazuh is already alerting for the desired sysmon events. You will likely need to create a custom rule if it isn't already alerting.
 - For example, in our test we will need DNS queries from sysmon event 22
-- We will change the above rule level from `0` to `4` in the file `/var/ossec/ruleset/rules/0595-win-sysmon_rules.xml`
+- We will change the under rule level from `0` to `4` in the file `/var/ossec/ruleset/rules/0595-win-sysmon_rules.xml`
 ```xml
 <rule id="61650" level="4">
    <if_sid>61600</if_sid>
