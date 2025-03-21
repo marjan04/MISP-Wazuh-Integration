@@ -171,7 +171,7 @@ Paste this [script](https://github.com/MISP/MISP/blob/2.4/app/files/feed-metadat
 <details>
 <summary>Click to expand API key generation steps</summary>
 
-- Click on administration >> list auth keys >> generate a key
+- Click on administration >> list auth keys >>  Add authentication key
 
 ![Auth Keys Menu](Images/image18.png)
 - We generate an authentication key to allow the API to recognize and authorize the user. Fields such as user, comment, and authorized IPs must be configured as needed before submitting.
